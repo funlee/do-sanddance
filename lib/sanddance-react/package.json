@@ -1,0 +1,58 @@
+{
+  "_from": "@msrvida/sanddance-react@^1.0.2",
+  "_id": "@msrvida/sanddance-react@1.1.7",
+  "_inBundle": false,
+  "_integrity": "sha1-z/Kn4MgwKnkOI/ND/7jOAObkcxw=",
+  "_location": "/@msrvida/sanddance-react",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@msrvida/sanddance-react@^1.0.2",
+    "name": "@msrvida/sanddance-react",
+    "escapedName": "@msrvida%2fsanddance-react",
+    "scope": "@msrvida",
+    "rawSpec": "^1.0.2",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/@msrvida/sanddance-react/download/@msrvida/sanddance-react-1.1.7.tgz",
+  "_shasum": "cff2a7e0c8302a790e23f343ffb8ce00e6e4731c",
+  "_spec": "@msrvida/sanddance-react@^1.0.2",
+  "_where": "C:\\Users\\i\\Desktop\\do-sanddance",
+  "author": "",
+  "bundleDependencies": false,
+  "dependencies": {
+    "@msrvida/sanddance": "^1.6.5",
+    "just-compare": "^1.3.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "deprecated": false,
+  "description": "SandDance visualization canvas React component",
+  "devDependencies": {
+    "@types/react": "16.4.7",
+    "@types/react-dom": "16.0.6"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "main": "dist/es6/index.js",
+  "name": "@msrvida/sanddance-react",
+  "scripts": {
+    "build": "npm run build-typescript && node ../../scripts/version.js && npm run build-css",
+    "build-css": "node-sass ./src/css -o ./dist/css",
+    "build-typescript": "tsc -p .",
+    "docs": "ts-docs-gen --entryFile src/index.ts -o ../../docs/docs/sanddance-react/v1/ && node ./scripts/docs.js",
+    "eslint": "eslint -c ../../.eslintrc.json --fix ./src/**/*.ts*",
+    "watch-css": "node-sass ./src/css -o ./dist/css --watch",
+    "watch-typescript": "tsc -p . -w"
+  },
+  "types": "dist/es6/index.d.ts",
+  "version": "1.1.7"
+}

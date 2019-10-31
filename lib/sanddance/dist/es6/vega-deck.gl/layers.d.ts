@@ -1,0 +1,10 @@
+import { Cube, PresenterConfig, Stage, StyledLine } from './interfaces';
+import { CubeLayerInterpolatedProps } from './cube-layer/cube-layer';
+import { DeckProps } from '@deck.gl/core/lib/deck';
+import { Layer } from 'deck.gl';
+import { LightSettings } from '@deck.gl/core/lib/layer';
+import { LinearInterpolator_Class } from './deck.gl-classes/linearInterpolator';
+import { Presenter } from './presenter';
+export declare function getLayers(presenter: Presenter, config: PresenterConfig, stage: Stage, lightSettings: LightSettings, lightingMix: number, interpolator: LinearInterpolator_Class<CubeLayerInterpolatedProps>, guideLines: StyledLine[]): Layer[];
+export declare function getCubeLayer(deckProps: DeckProps): Layer;
+export declare function getCubes(deckProps: DeckProps): Cube[];

@@ -1,0 +1,12 @@
+import { Axis, Data, LayoutParams, Mark, Signal, Transforms } from 'vega-typings';
+import { Column, Facets, Size, SpecContext, SpecViewOptions } from './types';
+export declare const facetTitleSeparator = " - ";
+export declare function facetSignals(context: SpecContext): Signal[];
+export declare function checkForFacetErrors(facets: Facets, errors: string[]): void;
+export declare function facetSize(context: SpecContext): Size;
+export declare function layout(context: SpecContext): LayoutParams;
+export declare function facetBinStep(facetColumn: Column, facetCount: number): number;
+export declare function facetSourceData(facetColumn: Column, facets: Facets, name: string): Data[];
+export declare function facetGroupData(source: string): Data[];
+export declare function facetTransforms(facetColumn: Column, facets: Facets): Transforms[];
+export declare function facetMarks(specViewOptions: SpecViewOptions, sourceDataName: string, childMarks: Mark[], childAxes: Axis[], childData?: Data[]): Mark[];
